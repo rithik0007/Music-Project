@@ -1,0 +1,128 @@
+*{
+
+    margin: 0;
+    padding :0;
+    box-sizing:border-box;
+}
+
+body {
+
+  font-family: 'Zen Tokyo Zoo', cursive;
+  background-image: url("pic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.app{
+      font-family: 'Zen Tokyo Zoo', cursive;
+       height: 100%;
+       display : flex;
+       flex-direction: column;
+       justify-content: space-around;
+        align-items: center;
+
+
+}
+
+.head h1 {
+
+   font-family: 'Zen Tokyo Zoo', cursive;
+   margin : 100px 100px 500px 100px ;
+   text-align: center;
+   font-size: 39px;
+   cursor: pointer;
+
+}
+
+.head h1:hover {
+font-family: 'Zen Tokyo Zoo', cursive;
+  text-decoration:  underline;
+  color : black;
+
+
+}
+.pads{
+
+     height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+.pads > div {
+
+
+    background : transparent;
+    opacity: 0 ;
+    height: 90px;
+    width: 100%;
+    flex: 1;
+
+
+}
+
+.pads > div:hover {
+border-top: 5px solid white;
+opacity : 1;
+
+}
+.pad1 {
+  cursor: pointer;
+  background-color: green;
+}
+
+.pad2{
+    cursor: pointer;
+  background-color: blue;
+}
+
+.pad3{
+    cursor: pointer;
+   background-color: red;
+}
+
+.pad4{
+    cursor: pointer;
+   background-color: purple;
+}
+
+.pad5{
+    cursor: pointer;
+  background-color: orange;
+}
+
+
+
+@keyframes jump {
+  0%{
+
+    bottom: 0%;
+    left: 20%;
+  }
+
+  50%{
+
+    bottom: 50%;
+    left : 50%;
+
+  }
+
+  100%{
+    bottom: 0%;
+    left: 80%;
+
+  }
+}
+.visual > div {
+
+    position: absolute;
+    height: 50px;
+    width : 50px;
+    border-radius: 50%;
+    bottom : 0%;
+    z-index: -1;
+    background : transparent ;
+
+}
